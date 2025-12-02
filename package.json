@@ -1,5 +1,5 @@
 {
-  "name": "autocomplete-tags",
+  "name": "@alexvdvalk/autocomplete-tags",
   "description": "Search and select multiple items as tags from any Directus collection with autocomplete functionality",
   "icon": "article",
   "version": "1.0.0",
@@ -13,6 +13,10 @@
     "multi-select",
     "search"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexvdvalk/autocomplete-tags-interface"
+  },
   "type": "module",
   "files": [
     "dist"
