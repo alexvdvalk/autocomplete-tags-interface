@@ -1,8 +1,5 @@
 <template>
-  <span
-    class="tag"
-    @click="$emit('remove')"
-  >
+  <span class="tag" @click="$emit('remove')">
     {{ displayValue }}
   </span>
 </template>
@@ -29,7 +26,7 @@ export default defineComponent({
   height: 28px;
   padding: 0 10px;
   background-color: var(--theme--primary);
-  color: var(--theme--primary-text);
+  color: var(--foreground-inverted);
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
@@ -39,7 +36,6 @@ export default defineComponent({
 }
 
 .tag:hover {
-  background-color: var(--theme--primary-accent);
+  background-color: var(--theme--danger);
 }
 </style>
-

@@ -31,7 +31,14 @@
     "build": "directus-extension build",
     "dev": "directus-extension build -w --no-minify",
     "link": "directus-extension link",
-    "validate": "directus-extension validate"
+    "validate": "directus-extension validate",
+    "version": "npm run build && git add dist",
+    "preversion": "npm run validate",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm run build",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
   },
   "devDependencies": {
     "@directus/extensions-sdk": "17.0.3",
